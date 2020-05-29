@@ -29,10 +29,10 @@ public class FileInputStreamDemo {
 
     private static void input02(String path) throws Exception {
         FileInputStream fis = new FileInputStream(path);
-        byte[] bytes = new byte[2]; // 这里一般是1024的整数倍
+        byte[] bytes = new byte[1024]; // 这里一般是1024的整数倍
         int read = 0;
         while ((read = fis.read(bytes)) != -1){
-            System.out.println(new String(bytes));
+            System.out.println(new String(bytes,0,bytes.length));
         }
     }
 }
