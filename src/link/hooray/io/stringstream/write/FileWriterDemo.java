@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * FileWriter extends OutputStreamWriter extends Writer
+ * FileWriter extends OutputStreamWriterDemo extends Writer
  * 把内存中的字符数据写入到文件中，
  * 构造方法
  *      FileWriter(File file)
